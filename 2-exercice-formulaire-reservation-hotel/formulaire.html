@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head> <!-- partie invisible -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire de réservation</title>
+
+    <style>
+        body {
+            width: 50%;
+            margin: auto;
+            border: 1px solid gray;
+            padding: 20px 10px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        h1,
+        h3 {
+            background: white;
+            text-align: center;
+        }
+
+        label,
+        input,
+        select {
+            margin-bottom: 15px;
+        }
+        
+        p{
+            margin: 3px;
+        }
+    </style>
+</head>
+
+<body> <!-- corps de la page début du contenu qui sera affiché -->
+
+    <h1>Votre Reservation</h1> <!-- Titre de niveau 1 -->
+    <h3>*champs obligatoire</h3> <!-- Titre de niveau 3 (plus petit) -->
+
+    <!-- début du formulaire -->
+    <form id="registration_form" method="POST">
+        <p>Votre nom:*</p>
+        <input type="text" placeholder="Nom">
+        <p>Votre prenom:*</p>
+        <input type="text" placeholder="Prenom">
+        <p>Numero de telephone:*</p>
+        <input type="number" placeholder="Numero de telephone">
+        <p>Votre Email:*</p>
+        <input type="email" placeholder="exemple@gmail.com">
+        <P>Selectionner la ville:</P>
+        <select name="" id="" >
+            <option value="Paris">Paris</option>
+            <option value="">Avion</option>
+            <option value="">Lille</option>
+            <option value="">Marseille</option>
+            <option value="Paris">Paris</option>
+            <option value="">Avion</option>
+            <option value="">Lille</option>
+            <option value="">Marseille</option>
+            <option value="Paris">Paris</option>
+            <option value="">Avion</option>
+            <option value="">Lille</option>
+            <option value="">Marseille</option>
+        </select>
+        <p>Date:*</p>
+        <input type="date" placeholder="">
+        <p>Nombre de personne:*</p>
+        <input type="number" placeholder="">
+
+        <p>Options:</p>
+        <label for="">Jacuzzi</label>
+        <input type="checkbox" placeholder="Nom">
+        <label for="">Mini Bar</label>
+        <input type="checkbox" placeholder="Nom">
+        <label for="">Petit-dej</label>
+        <input type="checkbox" placeholder="Nom">
+        <p>Ajouter un commentaire:</p>
+        <textarea name="okdoskdoskdsokds" id="" cols="30" rows="5" placeholder="Ajouter en commentaire"></textarea>
+        <p>Accepter Des Conditions General De Vente(CGV)*</p>
+        <input name="je refuse" value="je refuse" type="radio" >J'accepte
+        <input name="je refuse" value="je refuse" type="radio" > Je refuse
+        <br>
+        <button type="submit">Envoyer ma demande </button>
+
+
+    </form> <!--  fin du formulaire -->
+</body> <!-- fin du contenu de la page -->
+
+</html>
