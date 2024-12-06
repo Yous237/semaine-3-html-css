@@ -1,0 +1,50 @@
+.form-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.group-input{
+    display: flex;
+    gap: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.group-input{
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+}
+
+.input {
+    width: 90%;
+}
+
+.group-input input{
+    width: 96%;
+}
+
+form p {
+    margin-bottom: 3px;
+}
+
+form button{
+    width: 100%;
+    margin-top: 10px;
+}
+
+@media (max-width:320px){
+    .group-input{
+        flex-direction: column;
+    }
+}

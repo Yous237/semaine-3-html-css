@@ -1,0 +1,116 @@
+.hero {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: url('img/herobis.jpg') no-repeat center center/cover;
+ 
+    color: white;
+    text-align: center;
+
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.1); 
+    z-index: 1; 
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 2; 
+  }
+
+  .hero-content {
+    max-width: 800px;
+  }
+  
+  .hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+  }
+  
+  .hero-content p {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+    line-height: 1.6;
+  }
+  
+  .hero-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background: var(--rouge-sang);
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 25px;
+    transition: background 0.3s ease;
+  }
+  
+  .hero-button:hover {
+    background: #000000;
+    color: #ffffff;
+  }
+
+.listing-container-wrap{
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+
+}
+
+.listing-container {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 2rem;
+    width: 100%;
+}
+
+.listing article{
+    display: flex;
+    justify-content: space-between;
+    vertical-align: center;
+
+
+}
+
+.listing article h3{
+    margin: 0;
+}
+
+.listing div{
+    display: flex;
+    justify-content: space-between;
+    vertical-align: middle;
+    align-items: center;
+    gap: 1rem;
+}
+
+.listing div h4{
+    font-size: 24px;
+    color: rgb(124, 124, 124);
+}
+
+.listing div h3{
+    font-size: 24px;
+}
+
+.listing h4,h3{
+font-size: 24px;}
+
+
+@media (max-width: 320px){
+    .listing h3,h4{
+        font-size: 16px;
+    }
+}

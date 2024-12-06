@@ -1,0 +1,31 @@
+.title {
+    text-align: center;
+    font-weight: 800;
+    text-transform: capitalize;
+}
+
+.navigation-cgv{
+    text-align: center;
+}
+
+.navigation-cgv a{
+    text-decoration: underline;
+    margin-right: 4px;
+}
+
+.conditions {
+    padding:  1rem 10%;
+}
+
+.condition {
+    border: 1px solid black;
+    padding: 1rem;
+}
+
+.condition h1{
+    padding: 0px 3px 5px 3px;
+    border-bottom: 1px solid black;
+    display: inline-block;
+    width: auto;
+    border-radius: 4px;
+}
